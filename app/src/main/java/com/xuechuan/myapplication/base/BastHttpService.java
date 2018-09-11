@@ -136,6 +136,7 @@ public class BastHttpService {
             }
         };
 
+
         Observable.create(new ObservableOnSubscribe<Result>() {
             @Override
             public void subscribe(final ObservableEmitter<Result> emitter) throws Exception {
@@ -168,6 +169,7 @@ public class BastHttpService {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(observer);
+
 
     }
 
